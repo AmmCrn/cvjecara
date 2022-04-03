@@ -1,0 +1,9 @@
+{
+    "name": "ammcrn/cvjecara",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}

@@ -1,0 +1,185 @@
+html, body {
+    margin: 0; padding: 0; background: rgb(100, 0, 0);
+}
+
+header {
+    background: linear-gradient(rgb(180,20,0) 75%, rgb(160, 20, 0));
+    padding: 2em 4em;
+    color: white;
+}
+
+#logo-div {
+    width: 30%;
+}
+#header-menu {
+    width: 65%;
+    text-align: right;
+}
+
+#logo-div, #header-menu, header ul, header li, header a {
+    display: inline-block;
+    vertical-align: super;
+}
+
+#logo {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    font-size: 4em;
+    display: inline-block;
+}
+
+#logo-div img {
+    height: 3em;
+}
+
+header li {margin: 0 .25em;}
+
+.button {
+    font-family: sans-serif;
+    padding: .5em;
+    background: linear-gradient(rgb(220,20,20), rgb(210,20,20));
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background .25s, color .25s;
+}
+.button-dark {
+    background: linear-gradient(rgb(120,0,0), rgb(110,0,0));
+}
+
+.button:hover{
+    background: #fff;
+    color: rgb(220,20,20);
+}
+.button-dark:hover {
+    background: linear-gradient(rgb(160,0,0), rgb(150,0,0));
+    color: white;
+}
+
+#enter {
+    width: 100%;
+    height: 60vh;
+    background: rgb(160,0,0);
+    text-align: center;
+}
+#enter div {
+    position: relative;
+    height: 60vh;
+    text-align: center;
+}
+#enter a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    background: rgb(140,0,0);
+    margin: 1em;
+    border-radius: 8px;
+    padding: 2em;
+}
+
+.search {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 0 black;
+    padding: .6em;
+    width: 40%;
+}
+
+main table {
+    width: 100%;
+    background: rgb(160,0,0);
+    color: #ddd;
+    margin: 3em 0;
+}
+main table th {
+    text-align: left;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.timg {
+    width: 10%;
+}
+.tname {
+    width: 10%;
+}
+.tdesc {
+    width: 30%;
+}
+.tprice {
+    width: 10%;
+}
+
+
+/*
+*
+*   Create/Update styling
+*
+*/
+
+#create-button {
+    text-decoration: none;
+    color: white;
+    background: rgb(220,20,20);
+    border-radius: 16px;
+    padding: .25em .4em;
+    font-size: 200%;
+    display: inline-block;
+    margin: 1em 0;
+    transition: color .2s, background .2s;
+}
+#create-button:hover{
+    color: rgb(220,20,20);
+    background: white;
+}
+
+.tadmin a.button {
+    text-align: center;
+    padding: .6em 1.55em;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.tadmin {
+    font-size: 14px;
+}
+.tadmin form button {
+    padding: .75em 1em;   
+}
+
+.form-elem {
+    display: block;
+    margin: .5em 0;
+}
+
+.form-elem label {
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    padding: .5em 0;
+}
+
+.form-elem input[type=text], .form-elem input[type=number], .form-elem input[type=password], .form-elem textarea {
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0px 5px 0 black;
+    padding: .5em;
+    min-width: 300px;
+}
+
+.err {
+    color: red;
+    font-family: sans-serif;
+    background: rgb(100,0,0);
+    display: inline-block;
+    padding: 1em;
+    border-radius: 4px;
+    margin: 4px 0;
+}
